@@ -77,7 +77,7 @@ The .env.local file is ignored by Git to keep your keys safe.
 
 The API key is used strictly on the server side.
 
-###Deployment: Recommended to deploy on Vercel. Make sure to add GEMINI_API_KEY to your environment variables in the Vercel Dashboard.
+### Deployment: Recommended to deploy on Vercel. Make sure to add GEMINI_API_KEY to your environment variables in the Vercel Dashboard.
 
-##⚠️ Important Note
+## ⚠️ Important Note
 AI outputs are suggestions only. Always review and personalize the final CV with your own voice before applying to your dream job.
