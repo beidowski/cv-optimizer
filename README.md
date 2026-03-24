@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CV Optimizer
 
-## Getting Started
+Kendi CV’ni bir iş ilanına göre güçlendirmek için küçük bir araç. Metnini yapıştırıyorsun; yapay zekâ özet ve deneyim maddelerini düzenliyor, eksik anahtar kelimeleri ve kabaca bir ATS uyumu öneriyor.
 
-First, run the development server:
+Stack: **Next.js** + **Google Gemini** (API anahtarı sunucuda kalır, tarayıcıya sızmaz.)
+
+**Repo:** [github.com/beidowski/cv-optimizer](https://github.com/beidowski/cv-optimizer)
+
+---
+
+## Hızlı başlangıç
+
+```bash
+npm install
+```
+
+Kök dizinde `.env.local` oluştur:
+
+```env
+GEMINI_API_KEY=senin_anahtarın
+```
+
+([Google AI Studio](https://aistudio.google.com/) — örnek isimler için repodaki `.env.example` dosyasına bak; içine gerçek anahtar yazma.)
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcı: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Ne var burada?
 
-## Learn More
+| Sayfa        | Ne işe yarar? |
+|-------------|----------------|
+| **Ana sayfa** | CV + ilan yapıştır → **Run analysis** |
+| **Templates** | Hazır örnek; **Preview with AI** aynı sayfada sonuç, **Open in editor** ana sayfayı doldurur |
+| **History**   | Son çalıştırmalar (tarayıcıda `localStorage`) |
+| **About**     | Kısa tanıtım |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Komutlar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` — geliştirme
+- `npm run build` / `npm run start` — production dene
+- `npm run lint` — ESLint
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Güvenlik hatırlatması
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`.env.local` **asla commit’leme** (zaten `.gitignore`’da). Yayına alırken `GEMINI_API_KEY`’i hosting ortam değişkenlerinde tanımla.
+
+---
+
+## Yayın fikri
+
+API route kullandığı için düz **GitHub Pages** tek başına yetmez; **Vercel** benzeri bir yerde deploy etmek genelde en kolayı.
+
+---
+
+## Not
+
+Çıktılar öneridir; başvurmadan önce kendi sesinle gözden geçir.
+
+İyi şanslar.
