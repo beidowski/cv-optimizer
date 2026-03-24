@@ -1,68 +1,97 @@
 # CV Optimizer
 
-Kendi CV’ni bir iş ilanına göre güçlendirmek için küçük bir araç. Metnini yapıştırıyorsun; yapay zekâ özet ve deneyim maddelerini düzenliyor, eksik anahtar kelimeleri ve kabaca bir ATS uyumu öneriyor.
+A lightweight tool to improve your CV based on a specific job posting.
+Paste your CV and the job description, and the AI will refine your summary and experience bullets, highlight missing keywords, and provide a basic ATS compatibility analysis.
 
-Stack: **Next.js** + **Google Gemini** (API anahtarı sunucuda kalır, tarayıcıya sızmaz.)
+🧱 Tech Stack
 
-**Repo:** [github.com/beidowski/cv-optimizer](https://github.com/beidowski/cv-optimizer)
+* Next.js
+* Google Gemini (API key is securely stored on the server)
 
----
-
-## Hızlı başlangıç
-
-```bash
+🚀 Quick Start
 npm install
-```
-
-Kök dizinde `.env.local` oluştur:
-
-```env
-GEMINI_API_KEY=senin_anahtarın
-```
-
-([Google AI Studio](https://aistudio.google.com/) — örnek isimler için repodaki `.env.example` dosyasına bak; içine gerçek anahtar yazma.)
-
-```bash
+textCreate a .env.local file in the root directory:
+GEMINI_API_KEY=your_api_key
+textGenerate your key via Google AI Studio.
+Check .env.example for reference variable names.
+Never commit real keys.
 npm run dev
-```
+textOpen in browser:
+http://localhost:3000
 
-Tarayıcı: [http://localhost:3000](http://localhost:3000)
+📄 Features
 
----
+Page | Description
+--- | ---
+Home | Paste CV + job description → run analysis
+Templates | Ready-made samples; preview with AI or open in editor
+History | Stores recent runs in localStorage
+About | Short project overview
 
-## Ne var burada?
+🛠️ Scripts
+npm run dev     # development
+npm run build   # build
+npm run start   # run production
+npm run lint    # lint
+text🔐 Security
 
-| Sayfa        | Ne işe yarar? |
-|-------------|----------------|
-| **Ana sayfa** | CV + ilan yapıştır → **Run analysis** |
-| **Templates** | Hazır örnek; **Preview with AI** aynı sayfada sonuç, **Open in editor** ana sayfayı doldurur |
-| **History**   | Son çalıştırmalar (tarayıcıda `localStorage`) |
-| **About**     | Kısa tanıtım |
+* Never commit .env.local (already ignored).
+* Define GEMINI_API_KEY as an environment variable in your hosting platform.
 
----
+🌍 Deployment
 
-## Komutlar
+Since the app uses API routes, GitHub Pages alone is not sufficient.
+Deploying on platforms like Vercel is the easiest approach.
 
-- `npm run dev` — geliştirme
-- `npm run build` / `npm run start` — production dene
-- `npm run lint` — ESLint
+⚠️ Disclaimer
 
----
+Outputs are suggestions.
+Always review and adapt them to match your own voice before applying.
+Tamam, direkt kopyala-yapıştır yapabilirsin. Yukarıdaki her şeyi seçip kopyala ve README.md dosyana yapıştır.1,8 saniyeHızlıcvv optimiser ana baslıgının altında tek dosyaaaaaMarkdown# CV Optimizer
 
-## Güvenlik hatırlatması
+A lightweight tool to improve your CV based on a specific job posting. Paste your CV and the job description, and the AI will refine your summary and experience bullets, highlight missing keywords, and provide a basic ATS compatibility analysis.
 
-`.env.local` **asla commit’leme** (zaten `.gitignore`’da). Yayına alırken `GEMINI_API_KEY`’i hosting ortam değişkenlerinde tanımla.
+🧱 Tech Stack
 
----
+* Next.js
+* Google Gemini (API key is securely stored on the server)
 
-## Yayın fikri
+🚀 Quick Start
+npm install
+textCreate a .env.local file in the root directory:
+GEMINI_API_KEY=your_api_key
+textGenerate your key via Google AI Studio.  
+Check .env.example for reference variable names.  
+Never commit real keys.
+npm run dev
+textOpen in browser:  
+http://localhost:3000
 
-API route kullandığı için düz **GitHub Pages** tek başına yetmez; **Vercel** benzeri bir yerde deploy etmek genelde en kolayı.
+📄 Features
 
----
+| Page       | Description                                              |
+|------------|----------------------------------------------------------|
+| Home       | Paste CV + job description → run analysis                |
+| Templates  | Ready-made samples; preview with AI or open in editor    |
+| History    | Stores recent runs in localStorage                       |
+| About      | Short project overview                                   |
 
-## Not
+🛠️ Scripts
+npm run dev     # development
+npm run build   # build
+npm run start   # run production
+npm run lint    # lint
+text🔐 Security
 
-Çıktılar öneridir; başvurmadan önce kendi sesinle gözden geçir.
+* Never commit .env.local (already ignored).
+* Define GEMINI_API_KEY as an environment variable in your hosting platform.
 
-İyi şanslar.
+🌍 Deployment
+
+Since the app uses API routes, GitHub Pages alone is not sufficient.  
+Deploying on platforms like Vercel is the easiest approach.
+
+⚠️ Disclaimer
+
+Outputs are suggestions.  
+Always review and adapt them to match your own voice before applying.
