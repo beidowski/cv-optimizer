@@ -65,12 +65,13 @@ npm run dev
 Open http://localhost:3000 in your browser.
 
 ## 📋 Scripts
+```bash
 npm run dev – Starts the development server.
 
 npm run build – Builds the application for production.
 
 npm run lint – Runs ESLint to check for code quality.
-
+```
 ## 🔐 Security & Deployment
 The .env.local file is ignored by Git to keep your keys safe.
 
