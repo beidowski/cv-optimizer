@@ -1,97 +1,82 @@
-# CV Optimizer
+# 🚀 CV Optimizer
 
-A lightweight tool to improve your CV based on a specific job posting.
-Paste your CV and the job description, and the AI will refine your summary and experience bullets, highlight missing keywords, and provide a basic ATS compatibility analysis.
+**CV Optimizer** is a smart tool designed to help you quickly **tailor your CV** to any job description using the power of AI.
 
-🧱 Tech Stack
+Simply paste your CV and the job description, and Google Gemini will analyze them to provide:
+* 🎯 **A stronger professional summary**
+* 📈 **Improved experience bullet points**
+* 🔍 **Missing keywords for the specific role**
+* 📊 **Rough ATS compatibility score & improvement tips**
 
-* Next.js
-* Google Gemini (API key is securely stored on the server)
+> [!IMPORTANT]
+> **Privacy-First:** Your Gemini API key is handled securely on the server side and never leaves the environment.
 
-🚀 Quick Start
+---
+
+## 📸 Screenshots
+
+| Main Page & Analysis | AI Analysis Results | History & Templates |
+| :--- | :--- | :--- |
+| ![Main Page](https://github.com/beidowski/cv-optimizer/blob/main/screenshots/main-page.png) | ![Analysis Result](https://github.com/beidowski/cv-optimizer/blob/main/screenshots/analysis-result.png) | ![History](https://github.com/beidowski/cv-optimizer/blob/main/screenshots/history.png) |
+
+---
+
+## ✨ Features
+
+- **Instant AI Feedback:** Paste your CV + Job Description and get immediate optimization tips.
+- **Ready-made Templates:** Built-in examples to test the tool quickly.
+- **AI Preview:** View suggestions and open them in the editor with a single click.
+- **History:** Automatically saves your previous analyses in the browser using `localStorage`.
+- **Modern UI:** Clean, responsive interface built with Tailwind CSS and shadcn/ui.
+
+---
+
+## 🛠 Tech Stack
+
+* **Framework:** Next.js 15 (App Router + TypeScript)
+* **AI Engine:** Google Gemini API
+* **Styling:** Tailwind CSS + shadcn/ui
+* **Storage:** LocalStorage (Client-side history)
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/beidowski/cv-optimizer.git](https://github.com/beidowski/cv-optimizer.git)
+cd cv-optimizer
+```
+### 2. Install Dependencies
+```bash
 npm install
-textCreate a .env.local file in the root directory:
-GEMINI_API_KEY=your_api_key
-textGenerate your key via Google AI Studio.
-Check .env.example for reference variable names.
-Never commit real keys.
+```
+### 3. Set Up Environment Variables
+Create a .env.local file in the root directory and add your Gemini API key:
+```bash
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+You can get a free API key from Google AI Studio.
+
+### 4. Run Locally
+```bash 
 npm run dev
-textOpen in browser:
-http://localhost:3000
+```
+Open http://localhost:3000 in your browser.
 
-📄 Features
+## 📋 Scripts
+npm run dev – Starts the development server.
 
-Page | Description
---- | ---
-Home | Paste CV + job description → run analysis
-Templates | Ready-made samples; preview with AI or open in editor
-History | Stores recent runs in localStorage
-About | Short project overview
+npm run build – Builds the application for production.
 
-🛠️ Scripts
-npm run dev     # development
-npm run build   # build
-npm run start   # run production
-npm run lint    # lint
-text🔐 Security
+npm run lint – Runs ESLint to check for code quality.
 
-* Never commit .env.local (already ignored).
-* Define GEMINI_API_KEY as an environment variable in your hosting platform.
+## 🔐 Security & Deployment
+The .env.local file is ignored by Git to keep your keys safe.
 
-🌍 Deployment
+The API key is used strictly on the server side.
 
-Since the app uses API routes, GitHub Pages alone is not sufficient.
-Deploying on platforms like Vercel is the easiest approach.
+###Deployment: Recommended to deploy on Vercel. Make sure to add GEMINI_API_KEY to your environment variables in the Vercel Dashboard.
 
-⚠️ Disclaimer
-
-Outputs are suggestions.
-Always review and adapt them to match your own voice before applying.
-Tamam, direkt kopyala-yapıştır yapabilirsin. Yukarıdaki her şeyi seçip kopyala ve README.md dosyana yapıştır.1,8 saniyeHızlıcvv optimiser ana baslıgının altında tek dosyaaaaaMarkdown# CV Optimizer
-
-A lightweight tool to improve your CV based on a specific job posting. Paste your CV and the job description, and the AI will refine your summary and experience bullets, highlight missing keywords, and provide a basic ATS compatibility analysis.
-
-🧱 Tech Stack
-
-* Next.js
-* Google Gemini (API key is securely stored on the server)
-
-🚀 Quick Start
-npm install
-textCreate a .env.local file in the root directory:
-GEMINI_API_KEY=your_api_key
-textGenerate your key via Google AI Studio.  
-Check .env.example for reference variable names.  
-Never commit real keys.
-npm run dev
-textOpen in browser:  
-http://localhost:3000
-
-📄 Features
-
-| Page       | Description                                              |
-|------------|----------------------------------------------------------|
-| Home       | Paste CV + job description → run analysis                |
-| Templates  | Ready-made samples; preview with AI or open in editor    |
-| History    | Stores recent runs in localStorage                       |
-| About      | Short project overview                                   |
-
-🛠️ Scripts
-npm run dev     # development
-npm run build   # build
-npm run start   # run production
-npm run lint    # lint
-text🔐 Security
-
-* Never commit .env.local (already ignored).
-* Define GEMINI_API_KEY as an environment variable in your hosting platform.
-
-🌍 Deployment
-
-Since the app uses API routes, GitHub Pages alone is not sufficient.  
-Deploying on platforms like Vercel is the easiest approach.
-
-⚠️ Disclaimer
-
-Outputs are suggestions.  
-Always review and adapt them to match your own voice before applying.
+##⚠️ Important Note
+AI outputs are suggestions only. Always review and personalize the final CV with your own voice before applying to your dream job.
