@@ -15,12 +15,14 @@ Simply paste your CV and the job description, and Google Gemini will analyze the
 
 ## 📸 Screenshots
 
-| Main Page & Analysis | AI Analysis Results | History & Templates |
-| :--- | :--- | :--- |
-| ![Main Page](<img width="1740" height="921" alt="image" src="https://github.com/user-attachments/assets/e0ddaf54-ac01-41f2-8138-485a8fec5c61" />
-) | ![Analysis Result](<img width="600" height="715" alt="image" src="https://github.com/user-attachments/assets/a8a21521-1ed5-4ab4-b1d3-2de5e44af6f7" />
-) | ![History](<img width="831" height="920" alt="image" src="https://github.com/user-attachments/assets/a328517b-17eb-4a5c-891c-f74c3312e737" />
-) |
+### Ana Sayfa
+![Main Page](https://github.com/user-attachments/assets/e0ddaf54-ac01-41f2-8138-485a8fec5c61)
+
+### AI Analiz Sonuçları
+![Analysis Result](https://github.com/user-attachments/assets/a8a21521-1ed5-4ab4-b1d3-2de5e44af6f7)
+
+### Geçmiş & Şablonlar
+![History & Templates](https://github.com/user-attachments/assets/a328517b-17eb-4a5c-891c-f74c3312e737)
 
 ---
 
